@@ -12,7 +12,7 @@ if(!argv.port) {
     console.log('Error, you need to pass the port you want to run this application on with npm start -- -p 8001')
     process.exit(0)
 }
-const port = argv.port
+const port = 8080
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
